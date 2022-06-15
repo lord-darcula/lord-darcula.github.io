@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 5px;
+    align-items: center;
+    background-color: black;
+}
+
+.logo {
+    padding-left: 1%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav i {
+    font-size: 2.5vh;
+    padding-right: 1vh;
+}
+
+/*header*/
+header {
+    height: fit-content;
+    background-color: #ff0000;
+}
+
+.header-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.header-content button {
+    padding: 15px 35px;
+    margin-top: 2%;
+    margin-bottom: 1.5%;
+    background-color: black;
+    color: white;
+    font-size: small;
+    border-color: transparent;
+}
+
+.header-content button a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Secular One',
+        sans-serif;
+}
+
+.header-content h4 {
+    line-height: 3;
+}
+
+.left-text,
+.image {
+    flex: 50%;
+}
+
+.left-text h1,
+button,
+h4 {
+    font-family: 'Secular One',
+        sans-serif;
+}
+
+.left-text h1 {
+    letter-spacing: 1.5px;
+    word-spacing: 10px;
+}
+
+@media (max-width: 800px) {
+    .left-text {
+        padding: 5%;
+    }
+
+    .left-text h1 {
+        padding-top: 10%;
+    }
+}
+
+/*theme and video*/
+.theme {
+    background-color: rgb(27, 27, 27);
+    padding: 3%;
+    text-align: center;
+    color: white;
+}
+
+@font-face {
+    font-family: engraver;
+    src: url(font/EngraversGothicBT.ttf);
+}
+
+.theme h1 {
+    font-size: 35px;
+    margin-bottom: 1%;
+}
+
+.theme p {
+    font-family: engraver;
+    font-size: 25px;
+}
+
+.theme video {
+    padding-top: 5%;
+    width: 120vh;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+
+    .theme h1 {
+        padding-top: 15%;
+    }
+
+    .theme p {
+        padding: 3%;
+    }
+
+    .theme video {
+        width: 44vh;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+}
+
+/*gallery*/
+.gallery {
+    background-color: rgb(27, 27, 27);
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1.333fr 1.3333fr 1.3333fr;
+    gap: 0;
+    grid-template-rows: 1fr 1fr;
+    ss
+}
+
+.gallery div {
+    height: 70vh;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    .gallery {
+        display: grid;
+        height: 100%;
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .gallery div {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery img {
+        height: auto;
+        width: 100%;
+        display: block;
+
+    }
+}
+
+/*roadmap*/
+.roadmap {
+    background-color: white;
+    padding: 5%;
+}
+
+.roadmap h1 {
+    font-family: 'Secular One',
+        sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    font-size: 5vh;
+    text-align: center;
+    font-size: 35px;
+    font: bolder;
+    margin: 50px;
+}
+
+.roadmap h2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    text-align: center;
+    padding: 28px;
+}
+
+.blocks {
+    display: grid;
+    height: 40vh;
+    grid-template-columns: 1.3333fr 1.33333fr 1.33333fr;
+}
+
+@media (max-width: 800px) {
+    .roadmap h1 {
+        padding-top: 20%;
+    }
+
+    .blocks {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr;
+    }
+}
+
+.rectangle {
+    margin: auto;
+    height: 70px;
+    width: 350px;
+    background-color: black;
+}
+
+/*meet*/
+.meet {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    padding: 5%;
+}
+
+.members {
+    text-align: center;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1.3333fr 1.33333fr 1.33333fr;
+    padding: 3%;
+}
+
+.meet h2,
+h4 {
+    text-align: center;
+}
+
+.meet h2 {
+    font-family: 'Secular One',
+        sans-serif;
+    letter-spacing: 1.5px;
+    word-spacing: 8px;
+    font-size: 3.5vh;
+}
+
+.mem-data {
+    margin: auto;
+    background-color: black;
+    width: 50%;
+    height: auto;
+}
+
+.meet img {
+    width: 50%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .meet h2 {
+        font-size: xx-large;
+        padding-top: 5%;
+    }
+
+    .members {
+        text-align: center;
+        display: grid;
+        width: 80vw;
+        height: auto;
+        grid-template-columns: 1fr;
+        padding: 3%;
+        margin: 0;
+    }
+
+    .meet img {
+        width: 70%;
+        height: auto;
+    }
+
+    .mem-data {
+        margin: auto;
+        background-color: black;
+        width: 70%;
+        height: auto;
+        padding-bottom: 20px;
+
+    }
+}
+
+@font-face {
+    font-family: blackoakstd;
+    src: url(font/BlackoakStd.otf);
+}
+
+.meet h1 {
+    font-size: 3vh;
+    font-family: blackoakstd;
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media (max-width: 800px) {
+    .meet h1 {
+        font-size: 2.25vh;
+    }
+}
